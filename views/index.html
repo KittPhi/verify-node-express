@@ -1,6 +1,14 @@
 {{ message }}
 
 <form method="post" action="verify">
-  <input name="number" type="tel" value="15754947093">
+  <!-- <input name="number" type="tel" value="15754947093"> -->
+  <input name="number" type="tel">
+
+  <p>How would you like to recieve your code?</p>
+  <input type="radio" id="call" name="choice" value="call">
+  <label for="call">Call</label><br>
+  <input type="radio" id="text" name="choice" value="text">
+  <label for="text">Text</label><br>
+
   <button>Get code</button>
 </form>
